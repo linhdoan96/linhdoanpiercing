@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Accessories - Phụ Kiện Thời Trang Cao Cấp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+        }
+        
+        .newsletter-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(217, 70, 239, 0.5);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-gem text-2xl text-purple-600 mr-2"></i>
+                <span class="text-xl font-bold text-gray-800">Luxury Accessories</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="font-medium hover:text-purple-600 transition">Trang chủ</a>
+                <a href="#products" class="font-medium hover:text-purple-600 transition">Sản phẩm</a>
+                <a href="#about" class="font-medium hover:text-purple-600 transition">Về chúng tôi</a>
+                <a href="#testimonials" class="font-medium hover:text-purple-600 transition">Đánh giá</a>
+                <a href="#contact" class="font-medium hover:text-purple-600 transition">Liên hệ</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-purple-600">
+                    <i class="fas fa-shopping-cart text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-purple-600">
+                    <i class="fas fa-user text-xl"></i>
+                </a>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Phụ Kiện Thời Trang <span class="text-purple-600">Cao Cấp</span></h1>
+                <p class="text-lg mb-8 text-gray-600">Khám phá bộ sưu tập phụ kiện thời trang độc đáo, tinh tế và sang trọng. Mỗi món đồ là một tác phẩm nghệ thuật.</p>
+                <div class="flex space-x-4">
+                    <a href="#products" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-medium transition">Mua ngay</a>
+                    <a href="#about" class="border border-purple-600 text-purple-600 hover:bg-purple-50 px-6 py-3 rounded-full font-medium transition">Khám phá</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Phụ kiện thời trang" class="rounded-lg shadow-xl w-full max-w-md">
+                    <div class="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg">
+                        <p class="font-bold">Bộ sưu tập mới</p>
+                        <p class="text-sm text-gray-600">Khuyên tai & Dây chuyền</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Danh Mục Sản Phẩm</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="#" class="category-card bg-gray-50 rounded-lg p-6 text-center hover:bg-purple-50 transition">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-ring text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Nhẫn</h3>
+                    <p class="text-sm text-gray-600">Từ cổ điển đến hiện đại</p>
+                </a>
+                
+                <a href="#" class="category-card bg-gray-50 rounded-lg p-6 text-center hover:bg-purple-50 transition">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-gem text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Khuyên tai</h3>
+                    <p class="text-sm text-gray-600">Đẳng cấp và quyến rũ</p>
+                </a>
+                
+                <a href="#" class="category-card bg-gray-50 rounded-lg p-6 text-center hover:bg-purple-50 transition">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-necklace text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Dây chuyền</h3>
+                    <p class="text-sm text-gray-600">Tinh tế và sang trọng</p>
+                </a>
+                
+                <a href="#" class="category-card bg-gray-50 rounded-lg p-6 text-center hover:bg-purple-50 transition">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-belt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Thắt lưng</h3>
+                    <p class="text-sm text-gray-600">Thanh lịch và phong cách</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">Sản Phẩm Nổi Bật</h2>
+                <a href="#" class="text-purple-600 font-medium hover:underline">Xem tất cả</a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460914d22813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Nhẫn kim cương" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-purple-600 text-white text-xs px-2 py-1 rounded">Mới</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold mb-1">Nhẫn Kim Cương Trắng</h3>
+                        <p class="text-sm text-gray-600 mb-2">Thiết kế tinh tế, sang trọng</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-purple-600">3.990.000₫</span>
+                            <button class="bg-purple-100 text-purple-600 hover:bg-purple-200 px-3 py-1 rounded-full text-sm transition">
+                                <i class="fas fa-shopping-cart mr-1"></i> Thêm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Khuyên tai ngọc trai" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">-20%</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold mb-1">Khuyên Tai Ngọc Trai</h3>
+                        <p class="text-sm text-gray-600 mb-2">Quyến rũ và thanh lịch</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-purple-600">1.990.000₫</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">2.490.000₫</span>
+                            </div>
+                            <button class="bg-purple-100 text-purple-600 hover:bg-purple-200 px-3 py-1 rounded-full text-sm transition">
+                                <i class="fas fa-shopping-cart mr-1"></i> Thêm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dây chuyền vàng" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold mb-1">Dây Chuyền Vàng 18K</h3>
+                        <p class="text-sm text-gray-600 mb-2">Đẳng cấp và thời thượng</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-purple-600">5.490.000₫</span>
+                            <button class="bg-purple-100 text-purple-600 hover:bg-purple-200 px-3 py-1 rounded-full text-sm transition">
+                                <i class="fas fa-shopping-cart mr-1"></i> Thêm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1611594606605-8342bd4a1df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Thắt lưng da" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Bán chạy</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold mb-1">Thắt Lưng Da Cao Cấp</h3>
+                        <p class="text-sm text-gray-600 mb-2">Chất liệu da bò thật</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-purple-600">1.290.000₫</span>
+                            <button class="bg-purple-100 text-purple-600 hover:bg-purple-200 px-3 py-1 rounded-full text-sm transition">
+                                <i class="fas fa-shopping-cart mr-1"></i> Thêm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-6">Về Luxury Accessories</h2>
+                    <p class="text-gray-600 mb-4">Từ năm 2010, Luxury Accessories đã không ngừng nỗ lực mang đến những sản phẩm phụ kiện thời trang cao cấp, tinh tế và độc đáo nhất cho khách hàng.</p>
+                    <p class="text-gray-600 mb-6">Chúng tôi tự hào với đội ngũ thiết kế tài năng và quy trình sản xuất tỉ mỉ, đảm bảo mỗi sản phẩm đều là một tác phẩm nghệ thuật thực sự.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-purple-100 p-4 rounded-lg text-center">
+                            <p class="text-2xl font-bold text-purple-600">10+</p>
+                            <p class="text-sm">Năm kinh nghiệm</p>
+                        </div>
+                        <div class="bg-purple-100 p-4 rounded-lg text-center">
+                            <p class="text-2xl font-bold text-purple-600">5000+</p>
+                            <p class="text-sm">Khách hàng hài lòng</p>
+                        </div>
+                        <div class="bg-purple-100 p-4 rounded-lg text-center">
+                            <p class="text-2xl font-bold text-purple-600">100%</p>
+                            <p class="text-sm">Chất lượng đảm bảo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cửa hàng" class="rounded-lg shadow-md h-64 w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Thiết kế" class="rounded-lg shadow-md h-64 w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sản xuất" class="rounded-lg shadow-md h-64 w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sản phẩm" class="rounded-lg shadow-md h-64 w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Khách Hàng Nói Về Chúng Tôi</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Khách hàng" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Chị Ngọc Anh</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Tôi rất hài lòng với chiếc nhẫn mua tại Luxury Accessories. Chất lượng tuyệt vời, thiết kế tinh tế và giá cả hợp lý. Sẽ tiếp tục ủng hộ cửa hàng!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Khách hàng" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Anh Minh Đức</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Thắt lưng da tại đây chất lượng rất tốt, sử dụng hơn 1 năm vẫn như mới. Nhân viên tư vấn nhiệt tình, chuyên nghiệp. Cảm ơn Luxury Accessories!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Khách hàng" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Chị Thu Hà</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Dây chuyền vàng 18K tôi mua làm quà sinh nhật cho mẹ rất đẹp và sang trọng. Mẹ tôi rất thích. Cảm ơn cửa hàng đã có chính sách bảo hành tốt như vậy."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Đăng Ký Nhận Ưu Đãi</h2>
+            <p class="mb-8 max-w-2xl mx-auto">Nhận thông tin về các sản phẩm mới, khuyến mãi đặc biệt và nhiều hơn nữa bằng cách đăng ký email của bạn.</p>
+            
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Nhập email của bạn" class="newsletter-input flex-grow px-4 py-3 rounded-l-full focus:outline-none text-gray-800">
+                <button class="bg-purple-800 hover:bg-purple-900 px-6 py-3 rounded-r-full font-medium transition">Đăng ký</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-gem text-2xl text-purple-400 mr-2"></i>
+                        <span class="text-xl font-bold">Luxury Accessories</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Địa chỉ: 123 Nguyễn Huệ, Quận 1, TP.HCM</p>
+                    <p class="text-gray-400 mb-4">Hotline: 0909 123 456</p>
+                    <p class="text-gray-400">Email: info@luxuryaccessories.com</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Về chúng tôi</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Giới thiệu</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tuyển dụng</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Hệ thống cửa hàng</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Hỗ trợ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Chính sách bảo hành</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Kết nối với chúng tôi</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Thanh toán an toàn với:</p>
+                    <div class="flex space-x-2 mt-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-8">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard" class="h-8">
+                        <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" alt="Momo" class="h-8">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>© 2023 Luxury Accessories. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-purple-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Mobile menu toggle (placeholder - would need more implementation)
+        document.querySelector('header button').addEventListener('click', () => {
+            alert('Menu mobile sẽ hiển thị tại đây');
+        });
+    </script>
+</body>
+</html>
